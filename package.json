@@ -1,0 +1,31 @@
+{
+  "name": "frontendjs",
+  "version": "1.0.0",
+  "description": "Escuela de Java Script segundo curso",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javierfuentesm/Curso-Frontend-developer.git"
+  },
+  "keywords": [
+    "Escuela",
+    "de",
+    "javascript"
+  ],
+  "author": "Javier Fuentes Mora",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javierfuentesm/Curso-Frontend-developer/issues"
+  },
+  "homepage": "https://github.com/javierfuentesm/Curso-Frontend-developer#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@storybook/html": "^5.1.11",
+    "babel-loader": "^8.0.6"
+  }
+  
+}
