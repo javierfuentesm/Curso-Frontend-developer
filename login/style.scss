@@ -1,12 +1,19 @@
+$blanco: white;
+
 body {
     margin: 0px;
     font-family: "Muli", sans-serif;
   }
+@mixin flex{
+      display: flex;
+      align-items: center;
+  }
   .header {
+    @include flex;
     background-color: #21C08B;
     width: 100%;
     height: 80px;
-    display: flex;
+ //   display: flex;
     justify-content: space-between;
     align-items: center;
   }
@@ -26,12 +33,12 @@ body {
   }
   .login__container{
       background: rgba(255, 255, 255, 0.1);
-      border: 2px solid white ;
+      border: 2px solid $blanco ;
       border-radius: 40px;
       padding: 60px 68px 40px;
       min-height: 700px;
       width: 300px;
-      color: white;
+      color: $blanco;
       font-size: 14px;
       display: flex;
       justify-content: space-around;
@@ -47,14 +54,14 @@ body {
     font-size: 14px;
 }
 .login__container--remember-me{
-    color: white;
+    color: $blanco;
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
 }
 
 .login__container--remember-me a{
-    color: white;
+    color: $blanco;
    font-size: 14px;
    text-decoration: none;
 
@@ -78,7 +85,7 @@ body {
 .login__container--register a{
 
     font-size: 16px;
-    color: white;
+    color: $blanco;
     font-weight: bold;
     text-decoration: none;
 
@@ -92,7 +99,7 @@ body {
 .input{
     background: transparent;
     border-left: 0px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid $blanco;
     border-top: 0px;
     border-right: 0px;
     font-family: "Muli", sans-serif;
@@ -103,14 +110,14 @@ body {
     height: 50px;
 }
 ::placeholder{
-    color: white;
+    color: $blanco;
 
 }
 .button{
     background: rgba(255, 255, 255, 0.1);
     border: none;
     border-radius: 25px;
-    color: white;
+    color: $blanco;
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
@@ -128,7 +135,7 @@ margin: 10px 0px;
     background: #AB88FF;
 }
 .footer a {
-    color: white;
+    color: $blanco;
     cursor: pointer;
     font-size: 14px;
     padding-left: 30px;
@@ -149,5 +156,13 @@ margin: 10px 0px;
         align-items: flex-start;
         flex-direction: column;
     }
+
+}
+.categories__title{
+    color: $blanco;
+    font-size: 16px;
+    position: absolute;
+    padding: left;
+    width: 100%;
 
 }
